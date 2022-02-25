@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JS</title>
+</head>
+<body>
+    <script>
+        document.body.innerHTML="Aysha Nurseyit CS-2116";
+    </script>
+<br>
+    <script>
+        var today=new Date();
+ var year = today.getFullYear();
+ document.write("Year: "+ year);
+    </script>
+
+    <div class="content">
+        <div class="day">
+        </div>
+    </div>
+
+<script>
+    const d = new Date();
+    document.write("Date: "+ d.getDate());
+    </script>
+
+    <br>
+<script>
+const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+const m = new Date();
+let month = months[m.getMonth()];
+document.write("Month: " + month);
+</script>
+
+<script>
+    const h = new Date();
+h.getHours();
+
+const l = new Date();
+l.getMinutes();
+
+const s = new Date();
+s.getSeconds();
+
+document.write("Time: " + h.getHours() + ":" + l.getMinutes() + ":" + s.getSeconds());
+</script><br><br>
+
+
+<script>
+    function myfun(){
+        var a=document.getElementById('number').value;
+        var b=document.getElementById('numbers').value;
+        document.getElementById('result').innerHTML=(a*b);
+    }
+
+    function myfun2(){
+        var a=document.getElementById('number').value;
+        var b=document.getElementById('numbers').value;
+        document.getElementById('result').innerHTML=(a/b);
+    }
+</script>
+
+
+<div class="calculate">
+    1st number:
+    <input type="number" value="" id="number"><br><br>
+    2nd number:
+    <input type="number" value="" id="numbers"><br><br>
+    <input type="submit" value="multiply" onclick="return myfun()">
+    <input type="submit" value="divide" onclick="return myfun2()"><br><br>
+    <b>The result is:</b><br><br>
+    <span id="result"></span>
+</div>
+
+
+<script types="text/javascript" src="index.js" ></script>
+</body>
+</html>
